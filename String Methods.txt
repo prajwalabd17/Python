@@ -1,0 +1,217 @@
+# capitalize()
+text = "hello world"
+capitalized_text = text.capitalize()
+print(capitalized_text)  # Output: Hello world
+
+# casefold()
+text = "HELLO World"
+casefolded_text = text.casefold()
+print(casefolded_text)  # Output: hello world
+
+# center(width)
+text = "Python"
+centered_text = text.center(10)
+print(centered_text)  # Output:  Python  
+
+# count(substring)
+text = "python programming is fun and Python is powerful"
+count_python = text.count("Python")
+print(count_python)  # Output: 2
+
+# encode(encoding)
+text = "hello"
+encoded_text = text.encode("utf-8")
+print(encoded_text)  # Output: b'hello'
+
+# endswith(suffix)
+text = "Hello, World!"
+ends_with_exclamation = text.endswith("!")
+print(ends_with_exclamation)  # Output: True
+
+# expandtabs(tabsize)
+text = "Hello\tWorld"
+expanded_text = text.expandtabs(4)
+print(expanded_text)  # Output: Hello   World
+
+# find(substring)
+text = "Python is easy and Python is powerful"
+index_python = text.find("Python")
+print(index_python)  # Output: 0
+
+# format()
+name = "John"
+age = 30
+formatted_string = "My name is {} and I am {} years old.".format(name, age)
+print(formatted_string)  # Output: My name is John and I am 30 years old.
+
+# format_map(mapping)
+mapping = {'name': 'Alice', 'age': 25}
+formatted_string = "My name is {name} and I am {age} years old.".format_map(mapping)
+print(formatted_string)  # Output: My name is Alice and I am 25 years old.
+
+# index(substring)
+text = "Python is easy and Python is powerful"
+index_python = text.index("Python")
+print(index_python)  # Output: 0
+
+# isalnum()
+alphanumeric = "Python3"
+is_alnum = alphanumeric.isalnum()
+print(is_alnum)  # Output: True
+
+# isalpha()
+alphabetical = "Python"
+is_alpha = alphabetical.isalpha()
+print(is_alpha)  # Output: True
+
+# isascii()
+ascii_text = "Hello"
+is_ascii = ascii_text.isascii()
+print(is_ascii)  # Output: True
+
+# isdecimal()
+decimal_text = "12345"
+is_decimal = decimal_text.isdecimal()
+print(is_decimal)  # Output: True
+
+# isdigit()
+digit_text = "12345"
+is_digit = digit_text.isdigit()
+print(is_digit)  # Output: True
+
+# isidentifier()
+identifier = "my_variable"
+is_id = identifier.isidentifier()
+print(is_id)  # Output: True
+
+# islower()
+lower_text = "hello"
+is_lower = lower_text.islower()
+print(is_lower)  # Output: True
+
+# isnumeric()
+numeric_text = "12345"
+is_numeric = numeric_text.isnumeric()
+print(is_numeric)  # Output: True
+
+# isprintable()
+printable_text = "Hello\nWorld"
+is_printable = printable_text.isprintable()
+print(is_printable)  # Output: False
+
+# isspace()
+space_text = "   "
+is_space = space_text.isspace()
+print(is_space)  # Output: True
+
+# istitle()
+title_text = "Python Is Awesome"
+is_title = title_text.istitle()
+print(is_title)  # Output: True
+
+# isupper()
+upper_text = "HELLO"
+is_upper = upper_text.isupper()
+print(is_upper)  # Output: True
+
+# join(iterable)
+words = ["Hello", "World"]
+joined_text = " ".join(words)
+print(joined_text)  # Output: Hello World
+
+# ljust(width)
+text = "Python"
+left_justified_text = text.ljust(10)
+print(left_justified_text)  # Output: Python    
+
+# lower()
+text = "Hello World"
+lowercased_text = text.lower()
+print(lowercased_text)  # Output: hello world
+
+# lstrip()
+text = "   Hello World   "
+left_stripped_text = text.lstrip()
+print(left_stripped_text)  # Output: Hello World   
+
+# maketrans()
+table = str.maketrans("aeiou", "12345")
+text = "hello"
+translated_text = text.translate(table)
+print(translated_text)  # Output: h2ll4
+
+# partition(separator)
+text = "Python is fun"
+partitioned_text = text.partition("is")
+print(partitioned_text)  # Output: ('Python ', 'is', ' fun')
+
+# replace(old, new[, count])
+text = "Python is easy and Python is powerful"
+new_text = text.replace("Python", "Java", 1)
+print(new_text)  # Output: Java is easy and Python is powerful
+
+# rfind(substring)
+text = "Python is easy and Python is powerful"
+last_index_python = text.rfind("Python")
+print(last_index_python)  # Output: 17
+
+# rindex(substring)
+text = "Python is easy and Python is powerful"
+last_index_python = text.rindex("Python")
+print(last_index_python)  # Output: 17
+
+# rjust(width)
+text = "Python"
+right_justified_text = text.rjust(10)
+print(right_justified_text)  # Output:    Python
+
+# rpartition(separator)
+text = "Python is fun"
+right_partitioned_text = text.rpartition("is")
+print(right_partitioned_text)  # Output: ('Python ', 'is', ' fun')
+
+# rsplit([separator[, maxsplit]])
+text = "Python is fun and easy"
+split_words = text.rsplit()
+print(split_words)  # Output: ['Python', 'is', 'fun', 'and', 'easy']
+
+# rstrip()
+text = "   Hello World   "
+right_stripped_text = text.rstrip()
+print(right_stripped_text)  # Output:   Hello World
+
+# split([separator[, maxsplit]])
+text = "Python is fun and easy"
+split_words = text.split()
+print(split_words)  # Output: ['Python', 'is', 'fun', 'and', 'easy']
+
+# splitlines([keepends])
+text = "Hello\nWorld"
+lines = text.splitlines()
+print(lines)  # Output: ['Hello', 'World']
+
+# startswith(prefix)
+text = "Python is fun and easy"
+starts_with_python = text.startswith("Python")
+print(starts_with_python)  # Output: True
+
+# strip([characters])
+text = "   Hello World   "
+stripped_text = text.strip()
+print(stripped_text)  # Output: Hello World
+
+# swapcase()
+text = "Hello World"
+swapped_case_text = text.swapcase()
+print(swapped_case_text)  # Output: hELLO wORLD
+
+# title()
+text = "python programming is fun"
+title_case_text = text.title()
+print(title_case_text)  # Output: Python Programming Is Fun
+
+# translate(table)
+table = str.maketrans("aeiou", "12345")
+text = "hello"
+translated_text = text.translate(table)
+print(translated_text
